@@ -1,0 +1,35 @@
+{
+  "visibility_labels": {
+    "public": "Anyone can click.",
+    "premium": "Landing page is public; access may be paid.",
+    "private": "Not in public footer.",
+    "internal": "Not public."
+  },
+  "columns": [
+    {
+      "id": "contact",
+      "items": [
+        {
+          "label": "General",
+          "href": "mailto:contact@fedpromptly.com",
+          "visibility": "public"
+        },
+        {
+          "label": "Support",
+          "href": "mailto:support@fedpromptly.com",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "items": [
+        {
+          "label": "Private Communities (18+)",
+          "href": "pages/private-communities.html",
+          "visibility": "private"
+        }
+      ]
+    }
+  ]
+}
