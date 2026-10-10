@@ -1,0 +1,5 @@
+{
+  "app_id": "feed-watcher",
+  "verification_required": false,
+  "human_confirmation_before_execution": true
+}

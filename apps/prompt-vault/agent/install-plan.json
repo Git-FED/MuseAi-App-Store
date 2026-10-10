@@ -1,0 +1,5 @@
+{
+  "app_id": "prompt-vault",
+  "verification_required": false,
+  "human_confirmation_before_execution": true
+}

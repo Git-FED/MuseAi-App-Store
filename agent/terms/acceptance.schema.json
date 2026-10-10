@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": [
+    "agent",
+    "terms_version",
+    "accepted_at",
+    "human_reference"
+  ]
+}

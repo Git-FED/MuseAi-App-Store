@@ -1,0 +1,10 @@
+{
+  "name": "Muse AI App Store",
+  "catalog": "catalog/index.json",
+  "terms": "policies/agent-terms.md",
+  "supported_platforms": [
+    "windows",
+    "android"
+  ],
+  "download_rule": "Only use listing.distribution.download_url when non-null."
+}
