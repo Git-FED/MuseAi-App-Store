@@ -1,0 +1,10 @@
+name: validate-assets.yml
+on:
+  push:
+  pull_request:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Static placeholder workflow: validate-assets.yml"
