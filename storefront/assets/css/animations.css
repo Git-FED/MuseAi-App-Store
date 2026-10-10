@@ -1,0 +1,1 @@
+[data-tilt]{transform-style:preserve-3d;perspective:900px}[data-magnetic]{--mx:50%;--my:50%;background-image:radial-gradient(circle at var(--mx) var(--my),rgba(0,230,246,.2),transparent 45%)}.particle-mesh{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.22}
