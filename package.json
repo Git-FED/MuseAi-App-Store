@@ -3,6 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate": "python3 tools/validate_catalog.py && python3 tools/validate_assets.py && python3 tools/check_payment_providers.py"
+    "validate": "python3 tools/validate_catalog.py && python3 tools/validate_assets.py && python3 tools/check_payment_providers.py",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.149.0"
   }
 }

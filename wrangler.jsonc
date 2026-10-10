@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "museai-app-store",
+  "compatibility_date": "2026-10-09",
+  "assets": {
+    "directory": "./storefront",
+    "not_found_handling": "404-page"
+  }
+}
