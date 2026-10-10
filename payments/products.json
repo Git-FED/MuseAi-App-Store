@@ -1,0 +1,29 @@
+{
+  "accepted_providers": [
+    "paypal",
+    "stripe"
+  ],
+  "rejected_providers": [
+    "github-sponsors",
+    "ko-fi",
+    "buymeacoffee",
+    "nowpayments",
+    "substack"
+  ],
+  "products": {
+    "subscriber": {
+      "provider": "paypal",
+      "type": "subscription",
+      "plan_id": "P-4FD24238VX4902214NK2XP2Y",
+      "client_id": "BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok",
+      "status": "active"
+    },
+    "listing_fee": {
+      "provider": "stripe",
+      "type": "one_time",
+      "buy_button_id": "buy_btn_1UJKaaJaRf233kfWKZ81fcIe",
+      "publishable_key": "pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8",
+      "status": "active"
+    }
+  }
+}
