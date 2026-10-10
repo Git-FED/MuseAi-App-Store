@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": [
+    "github_username",
+    "email",
+    "terms_version"
+  ]
+}

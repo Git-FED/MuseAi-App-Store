@@ -1,0 +1,32 @@
+[
+  {
+    "id": "utilities",
+    "label": "Utilities",
+    "description": "Focused tools for everyday file and system tasks."
+  },
+  {
+    "id": "security",
+    "label": "Security",
+    "description": "Trust, integrity, and verification workflows."
+  },
+  {
+    "id": "developer-tools",
+    "label": "Developer tools",
+    "description": "Tools for building, checking, and maintaining Muse apps."
+  },
+  {
+    "id": "productivity",
+    "label": "Productivity",
+    "description": "Small tools that organize repeatable work."
+  },
+  {
+    "id": "research",
+    "label": "Research",
+    "description": "Discovery and monitoring tools for information workflows."
+  },
+  {
+    "id": "creative",
+    "label": "Creative",
+    "description": "Writing, art, and media helpers."
+  }
+]

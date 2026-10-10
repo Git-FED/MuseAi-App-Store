@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "app_id": "muse-hash",
+  "id": "muse-hash",
+  "name": "Muse Hash",
+  "version": "0.1.0",
+  "summary": "SHA-256 hash any file or folder from the command line.",
+  "publisher": {
+    "github_username": "OWNER_GITHUB_USERNAME",
+    "publication_control": "owner-only"
+  },
+  "agent_participation": {
+    "default_agent": "Muse",
+    "exception_required_for_other_agents": true
+  },
+  "muse_attribution": {
+    "agent_name": "Muse",
+    "creation_record": "catalog/listings/muse-hash/muse-attribution.json",
+    "listing_attribution_required": true,
+    "package_attribution_required": true
+  },
+  "access": {
+    "verification_required": false,
+    "github_account_required": false,
+    "approved_email_required": false,
+    "human_terms_acceptance_required": false,
+    "agent_terms_acceptance_required": false,
+    "membership_policy": "none",
+    "note": "100% free sample; no verified user or verified bot is required."
+  },
+  "platforms": {
+    "windows": {
+      "supported": true,
+      "requirements_document": "installation/windows/README.md"
+    },
+    "android": {
+      "supported": true,
+      "requirements_document": "installation/android/README.md"
+    }
+  },
+  "runtime": {
+    "type": "python",
+    "version_requirement": ">=3.10",
+    "dependencies_file": "source/requirements.txt"
+  },
+  "distribution": {
+    "provider": "github",
+    "repository": "OWNER/muse-ai-app-packages",
+    "release_tag": "muse-hash-v0.1.0",
+    "asset_name": "muse-hash-0.1.0.zip",
+    "download_url": null,
+    "sha256": null
+  },
+  "inspection": {
+    "permissions_file": "permissions.json",
+    "installation_plan": "agent/install-plan.json",
+    "requires_human_confirmation_before_execution": true
+  },
+  "documentation": {
+    "readme": "README.md",
+    "usage": "agent/usage.md",
+    "troubleshooting": "agent/troubleshooting.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "integrity": {
+    "checksums_file": "checksums.sha256",
+    "manifest_signature": null,
+    "package_signature": null
+  },
+  "tier": "free",
+  "sample": true,
+  "release_status": "sample-not-released",
+  "category": "utilities",
+  "tags": [
+    "hash",
+    "sha256",
+    "utility",
+    "offline"
+  ],
+  "label": "File integrity",
+  "accent": "#53d6a4",
+  "best_for": "Checking whether two files or folder snapshots match, without relying on a network service.",
+  "highlights": [
+    "SHA-256 fingerprints",
+    "File and folder inputs",
+    "No permissions declared"
+  ],
+  "workflow": [
+    "Select a file or folder",
+    "Calculate a SHA-256 digest",
+    "Compare or save the resulting fingerprint"
+  ],
+  "card_note": "Offline file fingerprinting"
+}

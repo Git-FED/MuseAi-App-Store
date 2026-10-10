@@ -1,0 +1,27 @@
+[
+  {
+    "id": "muse-hash",
+    "version": "0.1.0",
+    "published_at": "SAMPLE_NOT_RELEASED"
+  },
+  {
+    "id": "muse-verify",
+    "version": "0.1.0",
+    "published_at": "SAMPLE_NOT_RELEASED"
+  },
+  {
+    "id": "muse-catalog-lint",
+    "version": "0.1.0",
+    "published_at": "SAMPLE_NOT_RELEASED"
+  },
+  {
+    "id": "prompt-vault",
+    "version": "0.1.0",
+    "published_at": "SAMPLE_NOT_RELEASED"
+  },
+  {
+    "id": "feed-watcher",
+    "version": "0.1.0",
+    "published_at": "SAMPLE_NOT_RELEASED"
+  }
+]

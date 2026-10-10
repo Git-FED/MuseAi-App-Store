@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "platforms",
+    "tier",
+    "distribution",
+    "integrity",
+    "attribution"
+  ]
+}

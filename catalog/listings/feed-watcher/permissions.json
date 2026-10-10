@@ -1,0 +1,7 @@
+{
+  "permissions": [
+    "network.outbound.read"
+  ],
+  "network_policy": "read-only allowlist",
+  "notes": "Permissions are sample declarations and must be reviewed before a real release."
+}
