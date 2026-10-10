@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "app_id": "prompt-vault",
+  "id": "prompt-vault",
+  "name": "Prompt Vault",
+  "version": "0.1.0",
+  "summary": "Store and retrieve reusable prompts locally, encrypted at rest.",
+  "publisher": {
+    "github_username": "OWNER_GITHUB_USERNAME",
+    "publication_control": "owner-only"
+  },
+  "agent_participation": {
+    "default_agent": "Muse",
+    "exception_required_for_other_agents": true
+  },
+  "muse_attribution": {
+    "agent_name": "Muse",
+    "creation_record": "catalog/listings/prompt-vault/muse-attribution.json",
+    "listing_attribution_required": true,
+    "package_attribution_required": true
+  },
+  "access": {
+    "verification_required": false,
+    "github_account_required": false,
+    "approved_email_required": false,
+    "human_terms_acceptance_required": false,
+    "agent_terms_acceptance_required": false,
+    "membership_policy": "none",
+    "note": "100% free sample; no verified user or verified bot is required."
+  },
+  "platforms": {
+    "windows": {
+      "supported": true,
+      "requirements_document": "installation/windows/README.md"
+    },
+    "android": {
+      "supported": true,
+      "requirements_document": "installation/android/README.md"
+    }
+  },
+  "runtime": {
+    "type": "python",
+    "version_requirement": ">=3.10",
+    "dependencies_file": "source/requirements.txt"
+  },
+  "distribution": {
+    "provider": "github",
+    "repository": "OWNER/muse-ai-app-packages",
+    "release_tag": "prompt-vault-v0.1.0",
+    "asset_name": "prompt-vault-0.1.0.zip",
+    "download_url": null,
+    "sha256": null
+  },
+  "inspection": {
+    "permissions_file": "permissions.json",
+    "installation_plan": "agent/install-plan.json",
+    "requires_human_confirmation_before_execution": true
+  },
+  "documentation": {
+    "readme": "README.md",
+    "usage": "agent/usage.md",
+    "troubleshooting": "agent/troubleshooting.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "integrity": {
+    "checksums_file": "checksums.sha256",
+    "manifest_signature": null,
+    "package_signature": null
+  },
+  "tier": "free",
+  "sample": true,
+  "release_status": "sample-not-released",
+  "category": "productivity",
+  "tags": [
+    "prompts",
+    "storage",
+    "local",
+    "encrypted"
+  ],
+  "label": "Prompt library",
+  "accent": "#ffad70",
+  "best_for": "Keeping reusable prompts organized locally rather than scattered across chats or cloud services.",
+  "highlights": [
+    "Reusable prompt storage",
+    "Local-first positioning",
+    "Filesystem read and write declared"
+  ],
+  "workflow": [
+    "Save a prompt for later",
+    "Keep prompt material in local storage",
+    "Retrieve it for reuse"
+  ],
+  "card_note": "A local home for reusable prompts"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "example-app",
+  "name": "Example App",
+  "summary": "A deliberately small example listing for the catalog template.",
+  "version": "0.1.0",
+  "publisher": "EXAMPLE_OWNER",
+  "platforms": [
+    "windows",
+    "android"
+  ],
+  "tier": "unverified",
+  "category": "utilities",
+  "tags": [
+    "example"
+  ],
+  "icon": "listings/example-app/icon.svg",
+  "banner": "listings/example-app/banner.png",
+  "distribution": {
+    "download_url": null,
+    "release_tag": null
+  },
+  "integrity": {
+    "sha256": "PLACEHOLDER",
+    "signature_ref": null
+  },
+  "attribution": {
+    "agent": "Muse",
+    "creation_record": "agent/records/example-app.json",
+    "package_attribution": true
+  }
+}

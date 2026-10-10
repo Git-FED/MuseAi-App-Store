@@ -1,0 +1,176 @@
+[
+  {
+    "id": "example-app",
+    "name": "Example App",
+    "summary": "A deliberately small example listing for the catalog template.",
+    "version": "0.1.0",
+    "platforms": [
+      "windows",
+      "android"
+    ],
+    "tier": "unverified",
+    "category": "utilities",
+    "tags": [
+      "example"
+    ],
+    "icon": "listings/example-app/icon.svg",
+    "banner": "listings/example-app/banner.png",
+    "sample": true,
+    "verification_required": true
+  },
+  {
+    "id": "muse-hash",
+    "name": "Muse Hash",
+    "summary": "SHA-256 hash any file or folder from the command line.",
+    "version": "0.1.0",
+    "platforms": [
+      "windows",
+      "android"
+    ],
+    "tier": "free",
+    "category": "utilities",
+    "tags": [
+      "hash",
+      "sha256",
+      "utility",
+      "offline"
+    ],
+    "icon": "listings/muse-hash/icon.svg",
+    "banner": "listings/example-app/banner.png",
+    "sample": true,
+    "verification_required": false,
+    "label": "File integrity",
+    "accent": "#53d6a4",
+    "best_for": "Checking whether two files or folder snapshots match, without relying on a network service.",
+    "highlights": [
+      "SHA-256 fingerprints",
+      "File and folder inputs",
+      "No permissions declared"
+    ],
+    "card_note": "Offline file fingerprinting"
+  },
+  {
+    "id": "muse-verify",
+    "name": "Muse Verify",
+    "summary": "Verify a Muse signature against the published public key.",
+    "version": "0.1.0",
+    "platforms": [
+      "windows",
+      "android"
+    ],
+    "tier": "free",
+    "category": "security",
+    "tags": [
+      "verify",
+      "signature",
+      "security",
+      "offline"
+    ],
+    "icon": "listings/muse-verify/icon.svg",
+    "banner": "listings/example-app/banner.png",
+    "sample": true,
+    "verification_required": false,
+    "label": "Signature checks",
+    "accent": "#86a9ff",
+    "best_for": "Inspecting whether a Muse package signature matches the published public key before execution.",
+    "highlights": [
+      "Public-key signature verification",
+      "Read-only keychain access declared",
+      "No network access claimed"
+    ],
+    "card_note": "Check signatures before running packages"
+  },
+  {
+    "id": "muse-catalog-lint",
+    "name": "Muse Catalog Lint",
+    "summary": "Validate a Muse listing against the catalog schema.",
+    "version": "0.1.0",
+    "platforms": [
+      "windows"
+    ],
+    "tier": "free",
+    "category": "developer-tools",
+    "tags": [
+      "catalog",
+      "schema",
+      "validation",
+      "developer"
+    ],
+    "icon": "listings/muse-catalog-lint/icon.svg",
+    "banner": "listings/example-app/banner.png",
+    "sample": true,
+    "verification_required": false,
+    "label": "Catalog quality",
+    "accent": "#c49aff",
+    "best_for": "Reviewing a Muse app listing for schema problems before it is added to the catalog.",
+    "highlights": [
+      "Catalog schema validation",
+      "Windows-only support listed",
+      "Filesystem read declared"
+    ],
+    "card_note": "Catch listing issues early"
+  },
+  {
+    "id": "prompt-vault",
+    "name": "Prompt Vault",
+    "summary": "Store and retrieve reusable prompts locally, encrypted at rest.",
+    "version": "0.1.0",
+    "platforms": [
+      "windows",
+      "android"
+    ],
+    "tier": "free",
+    "category": "productivity",
+    "tags": [
+      "prompts",
+      "storage",
+      "local",
+      "encrypted"
+    ],
+    "icon": "listings/prompt-vault/icon.svg",
+    "banner": "listings/example-app/banner.png",
+    "sample": true,
+    "verification_required": false,
+    "label": "Prompt library",
+    "accent": "#ffad70",
+    "best_for": "Keeping reusable prompts organized locally rather than scattered across chats or cloud services.",
+    "highlights": [
+      "Reusable prompt storage",
+      "Local-first positioning",
+      "Filesystem read and write declared"
+    ],
+    "card_note": "A local home for reusable prompts"
+  },
+  {
+    "id": "feed-watcher",
+    "name": "Feed Watcher",
+    "summary": "Watch RSS and Atom feeds and hand new entries to Muse.",
+    "version": "0.1.0",
+    "platforms": [
+      "windows",
+      "android"
+    ],
+    "tier": "free",
+    "category": "research",
+    "tags": [
+      "rss",
+      "atom",
+      "feeds",
+      "research",
+      "network"
+    ],
+    "icon": "listings/feed-watcher/icon.svg",
+    "banner": "listings/example-app/banner.png",
+    "sample": true,
+    "verification_required": false,
+    "label": "Feed monitoring",
+    "accent": "#58d5d0",
+    "best_for": "Following RSS and Atom feeds and routing new entries into a Muse workflow.",
+    "highlights": [
+      "RSS and Atom feeds",
+      "Outbound read-only network policy",
+      "Hands new entries to Muse"
+    ],
+    "card_note": "Turn feed updates into a Muse handoff"
+  }
+]
