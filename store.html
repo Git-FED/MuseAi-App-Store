@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07070a">
+  <link rel="icon" href="assets/favicons/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/catalog.css">
+  <title>Apps · Muse AI App Store</title>
+  <meta name="description" content="Browse focused Muse apps by category, use case, platform, and permission profile.">
+</head>
+<body>
+  <canvas class="particle-mesh" data-particle-mesh aria-hidden="true"></canvas>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">M</span><span>Muse AI App Store</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="store.html" aria-current="page">Apps</a><a href="developer.html">Developers</a><a href="membership.html">Membership</a><a href="publisher.html">Publisher</a><a href="payments.html">Payments</a><a href="terms.html">Terms</a><a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell catalog-page">
+    <section class="catalog-intro">
+      <div class="eyebrow">The Muse catalog</div>
+      <h1>Small apps. Clear purpose.</h1>
+      <p>Explore each tool by what it does, who it helps, and what it asks access to. Every listing has its own category, focus, and permission profile.</p>
+      <div class="catalog-counts" id="catalog-counts" aria-live="polite"><span>Loading the catalog…</span></div>
+    </section>
+    <section class="catalog-controls" aria-label="Find apps">
+      <label class="catalog-search-label" for="catalog-search">Search apps</label>
+      <input id="catalog-search" type="search" placeholder="Try “offline”, “feeds”, or “security”" autocomplete="off">
+      <div class="category-filter-label">Browse by category</div>
+      <div class="category-filters" id="category-filters" role="group" aria-label="Filter by category"></div>
+    </section>
+    <section class="catalog-results" aria-labelledby="catalog-heading">
+      <div class="catalog-results-heading"><div><div class="eyebrow">Browse</div><h2 id="catalog-heading">Apps for different jobs</h2></div><p id="result-count" class="muted" aria-live="polite"></p></div>
+      <div class="catalog-grid" id="catalog-grid" aria-live="polite" aria-busy="true"></div>
+      <div class="catalog-empty" id="catalog-empty" hidden><h3>No apps match those filters.</h3><p class="muted">Try another category or search term.</p><button class="button secondary" id="clear-filters" type="button">Clear filters</button></div>
+      <p class="catalog-error" id="catalog-error" hidden>Catalog data could not be loaded. Please refresh and try again.</p>
+    </section>
+    <aside class="sample-notice"><strong>Sample catalog:</strong> These listings are free samples, not published releases. Their listing details and permissions are inspectable, but no download is offered until an actual release is published.</aside>
+  </main>
+  <footer>
+    <div class="shell footer-grid"><div><h3>Explore</h3><a href="index.html">Home</a><a href="store.html">Catalog</a><a href="developer.html">Developers</a></div><div><h3>Contact</h3><a href="mailto:contact@fedpromptly.com">General</a><a href="mailto:support@fedpromptly.com">Support</a><a href="mailto:business@fedpromptly.com">Business</a></div><div><h3>Policies</h3><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="exception.html">Exceptions</a></div><div><h3>Support</h3><a href="support.html">Project support</a><a href="https://github.com/FED-OS" rel="noopener noreferrer">GitHub</a><a href="pages/private-communities.html">Private Communities (18+)</a></div></div>
+    <div class="shell tiny">Static storefront. No backend. The scanner is a filter, not a guarantee.</div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/catalog.js" defer></script>
+</body>
+</html>
