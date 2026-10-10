@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07070a">
+  <link rel="icon" href="assets/favicons/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <title>Payments · Muse AI App Store</title>
+  <meta name="description" content="PayPal subscription and Stripe checkout for the Muse AI App Store.">
+  <style>
+    .payments-intro { max-width: 720px; margin: 0 auto; }
+    .age-gate { max-width: 560px; width: calc(100% - 32px); border: 1px solid rgba(0,230,246,.4); border-radius: 14px; padding: 24px; color: var(--ink); background: #12131b; box-shadow: 0 24px 70px rgba(0,0,0,.45); }
+    .age-gate::backdrop { background: rgba(0,0,0,.68); }
+    .age-gate__actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:20px; }
+    .payment-gated[hidden] { display:none; }
+    .payment-card { min-height: 240px; }
+    .payment-card iframe, .payment-card stripe-buy-button { max-width:100%; }
+    .payment-note { margin-top: 14px; color: var(--muted); font-size: .9rem; }
+    @media (max-width:480px) { .age-gate__actions { flex-direction:column; } }
+  </style>
+</head>
+<body><canvas class="particle-mesh" data-particle-mesh aria-hidden="true"></canvas>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">M</span><span>Muse AI App Store</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="store.html">Apps</a>
+        <a href="developer.html">Developers</a>
+        <a href="membership.html">Membership</a><a href="publisher.html">Publisher</a>
+        <a href="payments.html" aria-current="page">Payments</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="hero">
+      <div class="reveal">
+        <div class="eyebrow">PayPal + Stripe only</div>
+        <h1>Checkout without the mystery.</h1>
+        <p>Store payments on this page use only the supplied PayPal subscription and Stripe checkout embeds. Support donations, newsletters, and community widgets are not part of store checkout.</p>
+      </div>
+      <figure class="hero-art reveal delay-1">
+        <img src="assets/illustrations/promo-membership.png" alt="Friendly robots outside a clubhouse in a comic landscape">
+      </figure>
+    </section>
+
+    <section class="section payments-intro">
+      <div class="notice">A browser-only age check appears before the payment embeds. Nothing from the check is sent to the server; the choice lasts only for this tab session.</div>
+      <div class="actions">
+        <button class="button primary" type="button" id="open-age-gate">Show payment options</button>
+        <a class="button secondary" href="terms.html">Read payment terms</a>
+      </div>
+    </section>
+
+    <section class="section payment-gated" id="payment-options" hidden aria-live="polite">
+      <h2>Payment options</h2>
+      <p class="muted">Only PayPal and Stripe are embedded below. After a successful payment, keep your receipt or subscription ID and follow the owner’s approval instructions.</p>
+      <div class="payment-grid">
+        <article class="payment-card">
+          <span class="badge">Subscription</span>
+          <h3>PayPal subscription</h3>
+          <div id="paypal-button-container-P-4FD24238VX4902214NK2XP2Y"></div>
+          <p class="payment-note">PayPal plan: P-4FD24238VX4902214NK2XP2Y</p>
+        </article>
+        <article class="payment-card">
+          <span class="badge">One-time listing fee</span>
+          <h3>Stripe checkout</h3>
+          <stripe-buy-button id="stripe-buy-button" buy-button-id="buy_btn_1UJKaaJaRf233kfWKZ81fcIe" publishable-key="pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8"></stripe-buy-button>
+          <p class="payment-note">Stripe button: buy_btn_1UJKaaJaRf233kfWKZ81fcIe</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>After payment</h2>
+        <p class="muted">This static site does not verify payments automatically. Keep the PayPal subscription ID or Stripe receipt and email it to the owner for manual review. Do not email card numbers, security codes, or passwords.</p>
+      </div>
+    </section>
+
+    <section class="section promo-gallery">
+      <h2>More from the Muse landscape</h2>
+      <div class="comic-strip">
+        <figure><img src="assets/illustrations/promo-bazaar.png" alt="Friendly robots browsing an app bazaar"><figcaption class="tiny">Browse the bazaar</figcaption></figure>
+        <figure><img src="assets/illustrations/promo-workshop.png" alt="Robot developer working in a workshop valley"><figcaption class="tiny">Build with receipts</figcaption></figure>
+        <figure><img src="assets/illustrations/promo-membership.png" alt="Friendly robots outside a clubhouse"><figcaption class="tiny">Membership stays honest</figcaption></figure>
+        <figure><img src="assets/illustrations/promo-support.png" alt="Robot support desk in a meadow"><figcaption class="tiny">Support the project</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell footer-grid"><div><h3>Explore</h3><a href="index.html">Home</a><a href="store.html">Catalog</a><a href="developer.html">Developers</a></div><div><h3>Contact</h3><a href="mailto:contact@fedpromptly.com">General</a><a href="mailto:support@fedpromptly.com">Support</a></div><div><h3>Policies</h3><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div><div><h3>Support</h3><a href="support.html">Project support</a><a href="pages/private-communities.html">Private Communities (18+)</a></div></div><div class="shell footer-referral"><strong>Check out Muse, your personal AI agent.</strong> Redeem my code in Settings within 48 hours of joining and we'll both get 1 billion Muse tokens.<br><span>Code: <code>5F2V31</code></span> · <a href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Join Muse</a></div><div class="shell tiny">Static storefront. No backend. The scanner is a filter, not a guarantee.</div></footer>
+
+  <dialog class="age-gate" id="age-gate" aria-labelledby="age-gate-title" aria-describedby="age-gate-description">
+    <h2 id="age-gate-title">Confirm your age</h2>
+    <p id="age-gate-description">Payment options on this page are shown only to visitors aged 18 or older.</p>
+    <p class="muted">This check runs entirely in your browser and is remembered only for this tab session.</p>
+    <div class="age-gate__actions">
+      <button class="button primary" type="button" id="age-confirm">I am 18 or older</button>
+      <button class="button secondary" type="button" id="age-deny">I am under 18</button>
+    </div>
+  </dialog>
+  <p class="shell notice" id="age-denied" hidden>Payment options stayed hidden. You can return to the <a href="index.html">store home</a>.</p>
+
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    (() => {
+      const gate = document.getElementById('age-gate');
+      const open = document.getElementById('open-age-gate');
+      const confirm = document.getElementById('age-confirm');
+      const deny = document.getElementById('age-deny');
+      const options = document.getElementById('payment-options');
+      const denied = document.getElementById('age-denied');
+      let memoryOnly = false;
+      const sessionOk = () => { try { return sessionStorage.getItem('muse.age.ok') === '1'; } catch (_) { return memoryOnly; } };
+      const setSession = () => { try { sessionStorage.setItem('muse.age.ok', '1'); } catch (_) { memoryOnly = true; } };
+      const loadScript = (src, attrs = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script'); script.src = src; script.onload = resolve; script.onerror = reject;
+        Object.entries(attrs).forEach(([key, value]) => script.setAttribute(key, value)); document.head.appendChild(script);
+      });
+      const reveal = async () => {
+        setSession(); options.hidden = false; denied.hidden = true; gate.close();
+        try {
+          await loadScript('https://www.paypal.com/sdk/js?client-id=BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok&vault=true&intent=subscription', {'data-sdk-integration-source':'button-factory'});
+          if (window.paypal) window.paypal.Buttons({style:{shape:'rect',color:'gold',layout:'vertical',label:'subscribe'},createSubscription:(data,actions)=>actions.subscription.create({plan_id:'P-4FD24238VX4902214NK2XP2Y',quantity:1}),onApprove:(data)=>alert('Subscription ID: '+data.subscriptionID+'\nKeep this ID for manual approval.')}).render('#paypal-button-container-P-4FD24238VX4902214NK2XP2Y');
+          await loadScript('https://js.stripe.com/v3/buy-button.js');
+        } catch (_) { document.querySelector('.payment-gated .notice')?.remove(); const note=document.createElement('p'); note.className='notice'; note.textContent='A payment widget could not load. No payment was submitted.'; options.prepend(note); }
+      };
+      if (sessionOk()) { open.textContent='Payment options are available'; open.addEventListener('click', reveal); reveal(); }
+      else { open.addEventListener('click', () => gate.showModal()); }
+      confirm.addEventListener('click', reveal);
+      deny.addEventListener('click', () => { gate.close(); options.hidden = true; denied.hidden = false; });
+      gate.addEventListener('cancel', () => { options.hidden = true; denied.hidden = false; });
+    })();
+  </script>
+</body>
+</html>
