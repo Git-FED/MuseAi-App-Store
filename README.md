@@ -1,5 +1,7 @@
 # Muse AI App Store
 
+<img width="2560" height="1440" alt="05_geometric_topdown" src="https://github.com/user-attachments/assets/91731059-ecf5-48fd-baa2-e5c98934af5a" />
+
 A static, owner-published storefront for small AI apps distributed through GitHub Releases. There is no application backend: the storefront is HTML/CSS/JavaScript, catalog data is JSON, and access is controlled by the private GitHub packages repository.
 
 ## Rules at a glance
